@@ -23,3 +23,13 @@ class RequestTimeOut extends AppExceptions{
 
   RequestTimeOut([String? message]) : super(message, 'Request Time Out');
 }
+
+class InvalidUrlException extends AppExceptions{
+
+  InvalidUrlException([String? message]) : super(message, 'Invalid Url');
+}
+
+class FatchDataException extends AppExceptions{
+
+  FatchDataException([String? message]) : super(message, 'Error occured while Communication with Server');
+}
